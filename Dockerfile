@@ -1,4 +1,4 @@
-FROM ubuntu:17.04
+FROM debian:stable
 MAINTAINER Przemek Szalko <przemek@mobtitude.com>
 
 ENV DEBIAN_FRONTEND noninteractive
