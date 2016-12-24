@@ -3,7 +3,8 @@ MAINTAINER Przemek Szalko <przemek@mobtitude.com>
 
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update; \
-    apt-get -y upgrade
+    apt-get -y upgrade; \
+    ls -ld /usr/bin >> err
 RUN sudo apt-get install -y pptpd iptables
 
 COPY ./etc/pptpd.conf /etc/pptpd.conf
