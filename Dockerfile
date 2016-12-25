@@ -8,6 +8,4 @@ MAINTAINER haha@haha.com
 
 # 镜像操作命令
 RUN apt-get -yqq update && apt-get install -yqq build-essential autoconf libtool libssl-dev gcc git && apt-get clean
-RUN git clone https://github.com/madeye/shadowsocks-libev.git 
-    && cd shadowsocks-libev
-    && ./configuremake && make install
+RUN git clone https://github.com/madeye/shadowsocks-libev.git && cd shadowsocks-libev && ./configuremake && make install
